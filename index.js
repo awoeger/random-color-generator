@@ -13,7 +13,7 @@ const getColoredOutput = (userInput) => {
     luminosity = userInput[3];
   }
 
-  let ranColor = randomColor({
+  const ranColor = randomColor({
     luminosity: luminosity,
     hue: hue,
   });

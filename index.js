@@ -7,14 +7,15 @@ const getColoredOutput = (userInput) => {
   let luminosity = 'random';
   const prompt = ps();
 
+  // Check if user puts in hue
   if (userInput[2]) {
     hue = userInput[2];
   }
-
+  // Check if user puts in luminosity
   if (userInput[3]) {
     luminosity = userInput[3];
   }
-
+  // Asking user with prompt to put in hue and luminosity
   if (userInput[2] === 'ask') {
     const answerHue = prompt('Enter hue ');
     const answerLuminosity = prompt('Enter luminosity ');
@@ -22,6 +23,7 @@ const getColoredOutput = (userInput) => {
     luminosity = `${answerLuminosity}`;
   }
 
+  // Getting colored output with given hue and luminosity
   const ranColor = randomColor({
     luminosity: luminosity,
     hue: hue,

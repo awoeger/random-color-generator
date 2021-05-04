@@ -4,5 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/awoeger/random-color-generator.git",
   "author": "Andrea Wöger <andrea.woeger@gmx.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "my-colors": "^1.0.0",
+    "randomcolor": "^0.6.2"
+  }
 }

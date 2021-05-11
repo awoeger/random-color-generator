@@ -8,19 +8,15 @@ const getColoredOutput = (userInput) => {
   const prompt = ps();
 
   // Check if user puts in hue
-  if (userInput[2]) {
-    hue = userInput[2];
-  }
+  hue = process.argv[2];
+
   // Check if user puts in luminosity
-  if (userInput[3]) {
-    luminosity = userInput[3];
-  }
+  luminosity = process.argv[3];
+
   // Asking user with prompt to put in hue and luminosity
   if (userInput[2] === 'ask') {
-    const answerHue = prompt('Enter hue ');
-    const answerLuminosity = prompt('Enter luminosity ');
-    hue = `${answerHue}`;
-    luminosity = `${answerLuminosity}`;
+    hue = prompt('Enter hue ');
+    luminosity = prompt('Enter luminosity ');
   }
 
   // Getting colored output with given hue and luminosity

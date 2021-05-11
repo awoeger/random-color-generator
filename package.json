@@ -6,7 +6,7 @@
   "author": "Andrea Wöger <andrea.woeger@gmx.net>",
   "license": "MIT",
   "dependencies": {
-    "@next/eslint-plugin-next": "^10.2.0",
+    "@next/eslint-plugin-next": "10.2.1-canary.5",
     "my-colors": "^1.0.0",
     "prompt-sync": "^4.2.0",
     "randomcolor": "^0.6.2"
